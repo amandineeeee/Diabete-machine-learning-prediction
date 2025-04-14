@@ -38,7 +38,7 @@ Dans ce jeu de données, certaines variables contiennent des valeurs aberrantes 
 Ces zéros sont donc interprétés comme des valeurs manquantes et ont été traités en plusieurs étapes :
 - **Suppression de certaines caractéristiques:**
 Certaines colonnes présentaient un taux de valeurs incohérentes trop élevé. Ces variables ont été supprimées du dataset pour ne pas introduire de biais dans la modélisation.
-- **mputation des valeurs manquantes restantes:**
+- **Imputation des valeurs manquantes restantes:**
 Pour les colonnes conservées, les valeurs aberrantes ont été remplacées à l'aide d'une méthode d'imputation par K plus proches voisins (KNN imputer). Cette méthode estime les valeurs manquantes à partir des données les plus proches (similaires) dans le dataset.
 
 Une imputation par la médiane a également été testée, mais les résultats obtenus avec cette méthode étaient moins performants, car elle ne tient pas compte des relations entre les variables.
